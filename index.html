@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Digital Library</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <div class="sidebar"></div>
+    <div class="content">
+        <header>
+            <img src="./library.jpeg">
+            <p>Digital Library</p>
+        </header>
+        <main>
+            <header>
+                <button>Add a new book to shelf</button>
+            </header>
+            <div class="book-cards-wrapper">
+                <div class="book-cards">
+                    <img src="./image/tfa4.jpg">
+                    <div>
+                        <div>
+                            <span>Title:</span> <span>Things fall Apart</span>
+                        </div>
+                        <div>
+                            <span>Author:</span> <span>Chinua Achebe</span>
+                        </div>
+                        <div>
+                            <span>Number of pages:</span> <span>224</span>
+                        </div>
+                    </div>
+                    <div class="card-buttons">
+                        <select>
+                            <option value="unread" selected>Unread</option>
+                            <option value="read">Read</option>
+                        </select>
+                        <img src="./trash-can-outline.png" class="delete">
+                    </div>
+                </div>
+                <div class="book-cards">
+                    <img src="./image/grief-child.jpg">
+                    <div>
+                        <div>
+                            <span>Title:</span><span>Grief Child</span>
+                        </div>
+                        <div>
+                            <span>Author:</span><span>Lawrence Darmani</span>
+                        </div>
+                        <div>
+                            <span>Number of pages:</span><span>190</span>
+                        </div>
+                    </div>
+                    <div class="card-buttons">
+                        <select>
+                            <option value="unread" selected>Unread</option>
+                            <option value="read">Read</option>
+                        </select>
+                        <img src="./trash-can-outline.png" class="delete">
+                    </div>
+                </div>
+                <div class="book-cards">
+                    <img src="./image/romeo-and-juliet-320.jpg">
+                    <div>
+                        <div>
+                            <span>Title:</span><span>Romeo and Juliet</span>
+                        </div>
+                        <div>
+                            <span>Author:</span><span>William Shakespeare</span>
+                        </div>
+                        <div>
+                            <span>Number of pages:</span><span>150</span>
+                        </div>
+                    </div>
+                    <div class="card-buttons">
+                        <select>
+                            <option value="unread" selected>Unread</option>
+                            <option value="read">Read</option>
+                        </select>
+                        <img src="./trash-can-outline.png" class="delete">
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <dialog>
+        <form method="dialog">
+            <label for="title">
+                Title: <input type="text" id="title" name="title" required>
+            </label>
+            <label for="author">
+                Author: <input type="text" id="author" name="author" required>
+            </label>
+            <label for="numberOfPages">
+                Number of pages: <input type="number" id="numberOfPages" name="numberOfPages" required>
+            </label>
+            <button type="button">Done</button>
+        </form>
+    </dialog>
+</body>
+</html>
